@@ -1,0 +1,1070 @@
+body {
+    font-family: Aria, Helvetica, sans-serif;
+    background: #fff;
+    font-size: 62.5%;
+}
+
+#page-container {
+
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    ACCESSIBILITY
+----------------------------------------------------------------------------------------------------------*/
+.access {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow:hidden;
+}
+
+.skipNav a {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    z-index: -100;
+    color: #FFF;
+}
+.skipNav a:focus, .skipNav a:active {
+    z-index: 1000;
+    width: 25em;
+    height: 2em;
+    top: 0px;
+    left: 0px;
+    font-size: 1.3em;
+    color: #CC0000;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    BRAND BAR REGION
+----------------------------------------------------------------------------------------------------------*/
+#region-brandbar-container {
+
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    HEADER
+----------------------------------------------------------------------------------------------------------*/
+#region-header-container {
+
+}
+
+#region-header-left-belltower {
+    width: 70px;
+    height: 118px;
+    overflow: hidden;
+}
+
+#region-header-left {
+    background: url(../../images/base/ncsu-header-tile-left.png) repeat-x
+        left bottom;
+    position: relative;
+    height: 88px;
+    top: 30px;
+}
+
+#region-header-right {
+    background: url(../../images/base/ncsu-header-tile-right.png) repeat-x
+        left bottom;
+    height: 88px;
+    position: relative;
+    top: 30px;
+    position: relative;
+}
+
+#head {
+    border-bottom: 2px solid #fff;
+    position: relative;
+    width: 100%;
+    min-height: 116px;
+    display: inline-block;
+}
+
+/* easy clearing */
+#head:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*\*/
+#head {
+    display: block;
+}
+
+/* end easy clearing */
+#head p.noscript {
+    clear: both;
+    z-index: 99;
+    position: relative;
+    margin-left: 340px;
+}
+
+#siteTitleImage {
+    margin: 25px 0 0 15px;
+}
+#head-forms {
+
+}
+
+/* Search box styles */
+#region-header-right .form-text {
+    width: 180px;
+    font-size: 10px;
+}
+
+#region-header-right select {
+    width: 185px;
+    font-size: 10px;
+}
+/* hide the label and h2 tag for the search box */
+#region-header-right label, #region-header-right h2 {
+    display: none;
+}
+
+#header-site-search .content {
+    position: relative;
+    top: 25px;
+    left: 15px;
+
+}
+.ncstate-search-button {
+    position: relative;
+    top: 7px;
+}
+
+/* RED HEADER REGION MENU - FOR WHEN THERE IS NO BRAND BAR */
+#region-noBrandBarDefaultTopMenu {
+    width: 875px;
+    height: 30px;
+    overflow: hidden;
+    padding: 6px 0 6px 0;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+#region-noBrandBarDefaultTopMenu .ncsu-text {
+    position: relative;
+    top: -3px;
+}
+
+#region-noBrandBarDefaultTopMenu h2 {
+    font-family: Arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #CC0000;
+    float: left;
+}
+
+#region-noBrandBarDefaultTopMenu a {
+    color: #CC0000;
+    text-decoration: none;
+}
+#region-noBrandBarDefaultTopMenu a:hover, #region-noBrandBarDefaultTopMenu a:focus, #region-noBrandBarDefaultTopMenu a:active {
+    text-decoration: underline;
+}
+
+#region-noBrandBarDefaultTopMenu ul {
+    list-style-type:none;
+    float: right;
+    position: relative;
+    bottom: 3px;
+    left: 5px;
+}
+#region-noBrandBarDefaultTopMenu li {
+    background-image: url(http://www.ncsu.edu/_assets/images/layout_assets/head_topnav_div.gif);
+    background-position:100% 50%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    padding-bottom:2px;
+    padding-left:8px;
+    padding-right:9px;
+    padding-top:4px;
+}
+#region-noBrandBarDefaultTopMenu li.last {
+    background-image: none;
+}
+#noBrandBarDefaultTopMenuNav {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    HORIZONTAL MENU CONTAINER
+----------------------------------------------------------------------------------------------------------*/
+
+/* hide block title and all 2nd level menus */
+#horizontal-main-menu h2 {
+    display: none;
+}
+
+#horizontal-main-menu li ul {
+    display: none;
+}
+
+/* administration menu built into drupal or enabled via module */
+#admin-menu {
+    z-index: 100 !important;
+}
+
+/*
+ ***********************************************************************
+ * HORIZONTAL MAIN MENU STYLES
+ ************************************************************************
+*/
+
+#horizontal-menu-container {
+    margin: 4px auto 1px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /*text-transform: uppercase; */
+    font-weight: bold;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#horizontal-main-menu {
+    background-color: #333333;
+}
+#horizontal-main-menu ul.menu {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+/* remove any previously set margins and paddings */
+#horizontal-main-menu * {
+    margin: 0;
+    padding: 0;
+}
+
+/* remove <li> list styling off */
+#horizontal-main-menu li {
+    list-style: none;
+    border-right: 1px solid #cfcdc8;
+}
+
+#horizontal-main-menu li a {
+    font-size: 13px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+}
+#horizontal-main-menu li a:hover {
+
+}
+
+#horizontal-main-menu li.last {
+    border: none;
+}
+
+#horizontal-main-menu li {
+    list-style: none;
+}
+#horizontal-main-menu a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* set <li> position */
+#horizontal-main-menu ul.menu li {
+    float: left;
+    position: relative;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    CONTENT AREA CONTAINER (EVERYTHING UNDERNEATH THE HEADER AND ABOVE THE FOOTER)
+----------------------------------------------------------------------------------------------------------*/
+.content-area-container {
+
+}
+
+#content-area {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+}
+#content-area h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+#content-area h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+#content-area h5 {
+    font-size: 14px;
+}
+
+.content-area-background-with-left-column {
+    background: url(../../images/base/content_2col_bg.png) repeat-y;
+}
+
+.content-area-background-without-left-column {
+    background-color: #FFF;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN/CENTER CONTENT (THE CENTER COLUMN IN A 3-COL LAYOUT, OR THE LEFT 2 COLUMNS IN A 2-COL LAYOUT)
+----------------------------------------------------------------------------------------------------------*/
+#above-main-content {
+    margin: 0 0 20px 0;
+}
+
+#below-main-content {
+    margin: 20px 0 0 0;
+}
+
+#main-content, #above-main-content, #below-main-content {
+    padding: 0 12px 0 12px;
+    line-height: 1.55em;
+}
+#main-content p {
+    padding-bottom: 1em;
+}
+
+#main-content #page-title {
+    margin: 5px 0 14px 0;
+    padding: 0 0 13px 0;
+    border-bottom: 1px solid #CCC;
+}
+
+#main-content #page-title h1 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #CC0000; /* NC State Red */
+}
+
+#main-content a,#main-content a:visited {
+    color: #CC0000;
+    text-decoration: none;
+}
+
+#main-content a:hover, #main-content a:focus, #main-content a:active {
+    text-decoration: underline;
+    color: #9B1405;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN/CENTER CONTENT LINKS (UNDERNEATH FOR COMMENTS, TAXONOMY ETC
+----------------------------------------------------------------------------------------------------------*/
+#main-content .links {
+    width: 100%;
+    text-align: right;
+    padding: 10px 0 0 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN/CENTER CONTENT COMMENTS REGION
+----------------------------------------------------------------------------------------------------------*/
+.submitted {
+    margin: 10px 0 5px 0;
+    padding: 0;
+}
+
+#comments {
+    border-top: 1px solid #CCC;
+    padding: 5px 0 5px 0;
+}
+
+.comment-wrapper .comment {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.comment-wrapper .comment .submitted {
+    color: #AAA;
+}
+
+.comment-wrapper .comment .content {
+    padding: 5px 0 0 0;
+}
+
+.comment-wrapper .comment .links {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 5px 0 5px 0;
+}
+
+#comment-form .form-submit {
+    background: #CC0000;
+    color: #FFF;
+    font-size: 1.2em;
+    margin: 0 5px 0 0;
+}
+
+#comment-form .form-submit:hover {
+    background: #FFF;
+    color: #CC0000;
+}
+
+#comments .comment {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+#comments .comment-unpublished {
+    font-style: italic !important;
+}
+#comments .links li a {
+    padding: 5px 10px;
+    background: #d7d7d7;
+    border: 1px solid #000;
+    color: #000 !important;
+}
+#comments .links li a:hover {
+    background: #51555c;
+    color: #FFFFFF;
+    border: 1px solid #CC0000;
+}
+#comments .indented {
+    border-left: 7px solid #CCC;
+    padding-left: 1em;
+}
+#comments .submitted {
+    font-style: italic;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    LEFT REGION LAYOUT
+----------------------------------------------------------------------------------------------------------*/
+#region-left-menu-area-container {
+    line-height: 1.55em;
+}
+
+#region-left-menu-area-container ul.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#region-left-menu {
+    overflow: hidden;
+    background-color: #FFF;
+    color: #FFF;
+    /* min-height: 290px; */
+}
+
+#left-above-menu {
+    margin: 0 0 4px 0;
+    color: #000;
+}
+
+#left-main-menu {
+    background-color: #373737;
+}
+
+#left-sub-menu {
+    margin: 2px 0 0 0;
+    background-color: #666666;
+}
+
+#left-below-menu {
+    margin: 4px 0 4px 0;
+    color: #000;
+}
+
+#left-end-separator {
+    margin: 4px 0 4px 0;
+    background-color: #ba0000;
+    height: 12px;
+}
+
+#left-above-menu-content,#left-below-menu-content {
+    padding: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    LEFT MENU HEADER LIST/LINK STYLES
+----------------------------------------------------------------------------------------------------------*/
+
+#region-left-menu .block ul {
+    padding: 0;
+    margin: 0;
+}
+
+#left-main-menu {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#left-main-menu h2 {
+    display: block;
+    line-height: 1.3em;
+    padding: 10px 0 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #171717;
+    background-image: url("../../images/base/bullet_nav_active.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 10px 1.2em;
+}
+
+#left-main-menu .content .menu ul,#left-main-menu .content .menu li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#left-main-menu .content .menu li a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    background-color: #373737;
+    padding: 4px 10px 4px 20px;
+}
+
+#left-main-menu .content .menu li a:hover, #left-main-menu .content .menu li a:focus, #left-main-menu .content .menu li a:active {
+    background-color: #4B4B4B;
+}
+
+/* first set of sub links underneath the main menu */
+#left-main-menu .content .menu li ul li a {
+    background-color: #515151;
+    padding: 5px 0 5px 30px;
+    background-image: url("../../images/base/bullet_nav_lvl3.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 20px 0.7em;
+}
+
+/* second set of sub links underneath the main menu */
+#left-main-menu .content .menu li ul li ul li a {
+    background-color: #515151;
+    padding: 5px 0 5px 40px;
+    background-image: url("../../images/base/bullet_nav_lvl3.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 30px 0.7em;
+}
+
+#left-main-menu .content .menu .last {
+    padding: 0 0 4px 0;
+}
+
+/* 4th level of links */
+#left-main-menu .content .menu li ul li ul li ul li a {
+    background-color: #7a7a7a;
+    padding: 5px 0 5px 50px;
+    background-image: url("../../images/base/bullet_nav_lvl3.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 40px 0.7em;
+}
+#left-main-menu .content .menu li ul li ul li ul li a:hover, #left-main-menu .content .menu li ul li ul li ul li a:focus, #left-main-menu .content .menu li ul li ul li ul li a:active {
+    background-color: #848383;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    LEFT SECONDARY (SUB) MENU HEADER LIST/LINK STYLES
+----------------------------------------------------------------------------------------------------------*/
+#left-sub-menu {
+    padding: 10px 0 10px 0;
+}
+
+#left-sub-menu h2 {
+    display: block;
+    line-height: 1.3em;
+    padding: 10px 0 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #171717;
+    background-image: url("../../images/base/bullet_nav_active.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 10px 1.2em;
+}
+
+#left-sub-menu .content .menu ul,#left-sub-menu .content .menu li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#left-sub-menu .content .menu li a,#left-sub-menu .content .menu li a:visited
+{
+    display: block;
+    line-height: 1.3em;
+    padding: 3px 0 3px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background-image: url("../../images/base/bullet_nav.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 10px 0.7em;
+}
+
+#left-sub-menu .content .menu li a:hover,#left-sub-menu .content .menu li a:focus, #left-sub-menu .content .menu li a:active   {
+    background-color: #434343;
+}
+
+#left-below-menu h2 {
+    display: block;
+    line-height: 1.3em;
+    padding: 10px 0 10px 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#left-below-menu-content .block .content a {
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+#left-below-menu-content .block .content a:hover {
+    color: #a20000;
+    text-decoration: underline;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    RIGHT REGION LAYOUT
+----------------------------------------------------------------------------------------------------------*/
+#region-right-sidebar-container {
+    line-height: 1.55em;
+}
+
+#region-right-sidebar a, #region-right-sidebar a:visited {
+    color: #cc0000;
+    text-decoration: underline;
+}
+#region-right-sidebar a:hover, #region-right-sidebar a:focus, #region-right-sidebar a:active {
+    text-decoration: none;
+}
+
+#region-right-sidebar {
+    margin: 4px 0 0 0;
+    overflow: hidden;
+}
+
+#right-main-sidebar, #right-bottom-sidebar {
+    margin: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    RIGHT REGION CONTENT STYLES
+----------------------------------------------------------------------------------------------------------*/
+#right-main-sidebar-content, #right-bottom-sidebar-content {
+    margin: 0 10px 0px 0;
+}
+
+#right-main-sidebar-content .content, #right-bottom-sidebar-content .content {
+    padding: 0px;
+}
+
+#region-right-sidebar-container .content .helper {
+    margin:0px;
+    background-position:0 50%;
+    background-repeat:no-repeat repeat;
+    border: 1px solid #FF9897;
+    border-bottom: 0px;
+    padding:14px 20px 0px 10px;
+    overflow: hidden;
+}
+
+#region-right-sidebar-container .block-bottom {
+
+    height: 32px;
+    margin:0px;
+    padding: 0px;
+    background-image:url("../../images/base/sidebar_border_bottom.png");
+    background-position:0 50%;
+    background-repeat:no-repeat;
+    position: relative;
+    bottom: 5px;
+}
+
+#region-right-sidebar-container .block {
+    margin: 0 0 5px 0 !important;
+}
+#region-right-sidebar-container .block .content {
+    font-size: 12px;
+    color: #666666;
+}
+
+#right-main-sidebar-content .content p, #right-bottom-sidebar-content .content p {
+    line-height: 1.4em;
+
+}
+
+#right-main-sidebar-content h2, #right-bottom-sidebar-content h2 {
+    background-color:#CC0000;
+    background-image:url(../../images/base/sidebar_header_cut.png);
+    background-position:100% 100%;
+    background-repeat:no-repeat;
+    color:#FFFFFF;
+    display:inline-block;
+    font-size: 12px;
+    letter-spacing:1px;
+    padding:5px 40px 5px 10px;
+    text-transform:uppercase;
+    width:auto;
+}
+
+#right-main-sidebar-content img, #right-bottom-sidebar-content img {
+    max-width: 215px;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    RIGHT REGION MENU STYLES -- If a menu gets placed in the right-side-sidebar-container
+----------------------------------------------------------------------------------------------------------*/
+
+
+#region-right-sidebar-container ul.menu li,
+#region-right-sidebar-container .block-menu,
+#region-right-sidebar-container .block-menu .content,
+#region-right-sidebar-container .block-menu .content ul {
+    padding: 0;
+    margin: 0;
+}
+
+#region-right-sidebar-container .block-menu h2 {
+    background-color:#CC0000;
+    background-image:url(../../images/base/sidebar_header_cut.png);
+    background-position:100% 100%;
+    background-repeat:no-repeat no-repeat;
+    color:#FFFFFF;
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:1px;
+    padding:5px 40px 5px 10px;
+    text-transform:uppercase;
+    width:auto;
+}
+
+#region-right-sidebar-container .block-menu .content .menu ul,#region-right-sidebar-container .block-menu .content .menu li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#region-right-sidebar-container .block-menu .content .menu li a {
+    font-size: 12px;
+    color: #cc0000;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px 4px 5px;
+}
+
+/* first set of sub links underneath the main menu */
+#region-right-sidebar-container .block-menu .content .menu li ul li a {
+
+    padding: 5px 0 5px 15px;
+    background-image: url("../../images/base/bullet_nav_lvl3.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 20px 0.7em;
+}
+
+/* second set of sub links underneath the main menu */
+#region-right-sidebar-container .block-menu .content .menu li ul li ul li a {
+
+    padding: 5px 0 5px 25px;
+    background-image: url("../../images/base/bullet_nav_lvl3.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 30px 0.7em;
+}
+
+#region-right-sidebar-container .block-menu .content .menu .last {
+    padding: 0 0 5px 0;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    RIGHT SIDE BAR NO STYLE BLOCK REGIONS
+----------------------------------------------------------------------------------------------------------*/
+
+#right-top-sidebar-content, #right-main-blank-sidebar-content {
+    margin: 0;
+}
+
+#right-top-sidebar-content .content, #right-main-blank-sidebar-content {
+    padding: 0px;
+}
+
+#right-top-sidebar-content .content .helper, #right-main-blank-sidebar-content .content .helper {
+    margin:0;
+    background: none;
+    padding:0;
+    border: none;
+}
+#region-right-sidebar-container #right-top-sidebar-content .block-bottom, #region-right-sidebar-container #right-main-blank-sidebar-content .block-bottom {
+    display: none;
+}
+
+#right-top-sidebar-content .content p, #right-main-blank-sidebar-content .content p {
+    line-height: 1.4em;
+
+}
+
+#right-top-sidebar-content h2, #right-main-blank-sidebar-content h2 {
+    background: none;
+    color:#CC0000;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    CENTER AND RIGHT REGION CONTAINER (EVERYTHING TO THE RIGHT OF THE STATIC LEFT REGION
+----------------------------------------------------------------------------------------------------------*/
+#region-center-right-container {
+    /* background-color: #CC0000; */
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    BREADCRUMBS (NOT DISPLAYED UNLESS CUSTOM BREADCRUMBS MODULE IS INSTALLED, CONFIGURED & ENABLED
+----------------------------------------------------------------------------------------------------------*/
+#breadcrumb {
+    border: 1px solid #cfcdc8;
+    border-width: 1px 0;
+    padding: 4px 13px 2px 13px;
+    color: #5c5541;
+    margin: 6px 0 4px 3px;
+    line-height: 1.0em;
+}
+
+#breadcrumb a {
+    color: #c00;
+    text-decoration: none;
+}
+
+#breadcrumb a:hover, #breadcrumb a:focus, #breadcrumb a:active {
+    text-decoration: underline;
+}
+
+#breadcrumb img {
+    display: inline;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN IMAGE (SLIDER OR STATIC)
+----------------------------------------------------------------------------------------------------------*/
+#region-main-image {
+    height: 285px;
+    overflow: hidden;
+    margin: 0 0 5px 2px;
+}
+
+#region-main-image img {
+    padding: 0 0 0 3px;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    FOOTER CONTAINER
+----------------------------------------------------------------------------------------------------------*/
+#region-footer-container {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#region-footer-container a, #region-footer-container a:visited {
+    color: #fff;
+}
+
+/* Hide the title of the block, if the user configures a non-default menu for the footer region */
+#region-footer-container .block-menu h2 {
+    display:none;
+}
+
+#footer-separator {
+    margin: 4px 0 4px 0;
+    background-color: #CC0000;
+    height: 6px;
+}
+
+#footer-horizontal-menu {
+    background-color: #CC0000;
+    height: 40px;
+    margin: 0 0 10px 0;
+}
+
+#footer-horizontal-menu ul {
+    display: inline-block;
+    padding: 15px 9px 10px;
+    margin: 0;
+}
+
+#footer-horizontal-menu ul li {
+    float: left;
+    display: inline;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0 12px 0 11px;
+}
+
+#footer-horizontal-menu li.last {
+
+}
+
+#footer-horizontal-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#footer-horizontal-menu ul li a:hover, #footer-horizontal-menu ul li a:focus, #footer-horizontal-menu ul li a:active {
+    text-decoration: underline;
+}
+
+#footer-address-contact-info {
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #CC0000;
+    margin: 10px 0 25px 0;
+}
+
+#region-footer-container ul.social {
+float:right;
+width:148px;
+padding-right:21px;
+list-style: none;
+}
+
+#region-footer-container ul.social li {
+float:left;
+padding-left:5px;
+}
+
+#region-footer-container ul.social li a:focus {
+outline:1px dotted #000;
+}
+
+#region-footer-container ul.social li a.facebook {
+display:block;
+background:url(http://www.ncsu.edu/_core/images/layout_assets/home-sprite.jpg) no-repeat -839px -341px;
+width:32px;
+height:32px;
+text-indent:-9999px;
+}
+
+#region-footer-container ul.social li a.youtube {
+display:block;
+background:url(http://www.ncsu.edu/_core/images/layout_assets/home-sprite.jpg) no-repeat -839px -373px;
+width:32px;
+height:32px;
+text-indent:-9999px;
+}
+
+#region-footer-container ul.social li a.twitter {
+display:block;
+background:url(http://www.ncsu.edu/_core/images/layout_assets/home-sprite.jpg) no-repeat -870px -341px;
+width:32px;
+height:32px;
+text-indent:-9999px;
+}
+
+#region-footer-container ul.social li a.oncampus {
+display:block;
+background:url(http://www.ncsu.edu/_core/images/layout_assets/home-sprite.jpg) no-repeat -870px -373px;
+width:32px;
+height:32px;
+text-indent:-9999px;
+}
+
+
+/* make the default tables created by Drupal expand to the width of the container they appear in */
+table.sticky-enabled, table.views-table {
+    width: 100%;
+    margin-bottom: 1.5em;
+
+}
+table.sticky-enabled thead, table.views-table thead {
+    border-bottom: 2px solid #CCC;
+}
+table.sticky-enabled thead th, table.views-table thead th {
+    border: none;
+}
+table.sticky-enabled tr, table.views-table tr {
+    background-color: transparent;
+}
+table.sticky-enabled td, table.views-table td {
+    padding: 5px;
+    background-color: transparent;
+}
+
+
+/* div for links at end of post: vocab - terms etc */
+div.meta {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: solid 1px #CCC;
+}
+
+/* basic formatting for tables that appear in the main content area */
+#main-content .node table {
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+#main-content .node table td, #main-content .node table th {
+    padding: 0.3em;
+    border: 1px #ccc solid;
+}
+
+.messages, .warning, .error {
+    padding: 5px;
+    background-color: #a20000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #000000 !important;
+    margin: 1em 0 1em 0;
+}
+
+.messages a, .warning a, .error a {
+    color: #FFFFFF !important;
+    text-decoration: underline !important;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    GCAL_EVENTS MODULE BLOCKS (DEFAULT SETTINGS)
+----------------------------------------------------------------------------------------------------------*/
+
+.gcal_block_event {
+    border-bottom: 1px solid #CCC;
+    margin: 0;
+    padding: 0;
+}
+.gcal_block_event .element {
+    display: block;
+    padding: 5px 0 5px 0;
+}
+.gcal_block_event .date {
+    font-weight: bold;
+}
+.block-gcal_events br {
+    display:none; /* to hide the bug that inserts two breaks after each event for no reason*/
+}
+
+/*
+ * style for /photos page (lists all photo galleries, with thumbnail and title of each)
+*/
+
+.ncstateofficial-photo-gallery-feature-view table {
+    border-collapse:separate;
+    border-spacing: 10px 10px;
+}
+.ncstateofficial-photo-gallery-feature-view td {
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.ncstateofficial-photo-gallery-feature-view td img {
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+
+

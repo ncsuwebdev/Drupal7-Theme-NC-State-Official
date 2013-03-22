@@ -1,0 +1,72 @@
+; Official Drupal 7 Theme developed by Nick Young (njyoung / usaussie)
+
+name        = NC State University Theme
+description = Official Theme for NC State University (Drupal 7 only)
+project     = ncstate_official
+version     = 7.x-1.0rc1
+core        = 7.x
+
+; for updates to the theme, specify features server location
+project status url = http://drupal.ncsu.edu/features/fserver
+
+features[] = logo
+features[] = favicon
+
+;stylesheets[all][] = style.css
+;stylesheets[print][] = print.css
+
+;960 Grid System Styles, from http://www.gridsystemgenerator.com
+stylesheets[all][]   = css/960/reset.css
+stylesheets[all][]   = css/960/text.css
+stylesheets[all][]   = css/960/900_90_0_0.css
+
+
+; styles provided by NC State University Communications Office
+stylesheets[all][]   = css/base/screen.css
+stylesheets[print][] = css/base/print.css
+
+; Custom style files for website manager to add rules to (to override anything in other stylesheets)
+stylesheets[all][]   = custom/css/custom-screen.css
+stylesheets[print][] = custom/css/custom-print.css
+
+; javascript that will run on the entire website
+scripts[] = js/base.js
+
+; FILES FOR THE CYCLE PLUGIN
+scripts[]           = js/plugins/jquery.cycle/jquery.cycle.all.min.js
+stylesheets[all][]  = css/base/plugins/jquery.cycle/jquery.cycle.css
+
+regions[brandbar]                   = Brand Bar Region
+regions[header_search]              = Search Region in Header
+regions[horizontal_main_menu]       = Horizontal Main Menu
+regions[left_above_menu]            = Above Left Menu Region
+regions[left_primary_menu]          = Left Primary Menu
+regions[left_secondary_menu]        = Left Secondary Menu
+regions[left_below_menu]            = Below Left Menu Region
+regions[main_image]                 = Main Image
+regions[main_above_content]         = Above Main Content
+regions[content]                    = Main Content
+regions[main_below_content]         = Below Main Content
+regions[right_top_sidebar]          = Right Top Sidebar (No Style)
+regions[right_main_sidebar]         = Right Main Sidebar (Styled)
+regions[right_main_blank_sidebar]   = Right Main Sidebar (No Style)
+regions[right_bottom_sidebar]       = Right Bottom Sidebar (Styled)
+regions[footer_menu]                = Footer Menu
+
+; hidden regions for Drupal to open and close the page properly
+regions[page_top]                   = Page top
+regions[page_bottom]                = Page bottom
+
+; custom options displayed on theme settings page (defaults set here, selected in theme-settings.php)
+settings[title_image_url]                = 'http://drupal.ncsu.edu/resources/theme-resources/ncstate_official/site_title/site_title_image.png'
+settings[site_title_vertical_offset]     = '0px'
+settings[site_title_horizontal_offset]   = '0px'
+settings[show_breadcrumbs]               = 1
+settings[breadcrumb_separator]           = ' > '
+settings[show_post_info_on_search]       = 0
+settings[slider_transition_time]         = 5000
+settings[copyright_information]          = '© ' . date('Y', time())
+settings[footer_contact_information]     = 'North Carolina State University Raleigh, NC 27695 Phone: (919) 515-2011'
+settings[social_facebook_url]            = 'http://facebook.com/ncstate'
+settings[social_youtube_url]             = 'http://youtube.com/ncstate'
+settings[social_twitter_url]             = 'http://twitter.com/ncstate'
